@@ -70,7 +70,7 @@ trainer = optimzer.minimize(loss)
 
 # load label
 result  = mnist.target
-result = result[:10000]
+result = result[:20000]
 
 labels = np.zeros(  (len(result),10),  dtype = np.int)
 for i in range(len(result)):
@@ -101,7 +101,7 @@ global_v = tf.global_variables()
 op_init = tf.initializers.variables(global_v)
 session.run(op_init)
 
-TIMES = 100
+TIMES = 500
 batch_size  = 100
 batch = len(data) // batch_size
 correct_rates = []

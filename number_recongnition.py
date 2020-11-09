@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 import cv2
-test = cv2.imread('test1.png')
+test = cv2.imread('6.png')
 a = np.zeros((28,28,1))
 a[:,:,0] = test[:,:,1]
 
